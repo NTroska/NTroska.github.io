@@ -26,6 +26,9 @@ header {
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -215,6 +218,23 @@ footer p {
     }
 
     #portfolio .grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .placeholder {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #about p, #contact p {
+        font-size: 1rem;
+    }
+
+    #contact ul {
         flex-direction: column;
         gap: 15px;
     }
