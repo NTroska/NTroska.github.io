@@ -10,7 +10,7 @@ body {
     background: #f1e6d1; /* Нежно-бежевый фон */
     color: #6a4e23; /* Темно-бежевый для текста */
     line-height: 1.6;
-    background-image: url('pexels-edward-jenner-4250573.jpg'); /* Здесь позже вставьте путь к вашему изображению */
+    background-image: url('background-image.jpg'); /* Здесь позже вставьте путь к вашему изображению */
     background-size: cover; /* Заставляет картинку фона покрывать весь экран */
     background-position: center center; /* Центрирует изображение фона */
 }
