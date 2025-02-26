@@ -32,18 +32,27 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <p>Here are some of my recent video editing projects:</p>
+        
+        <!-- Место для загрузки файла -->
+        <div class="upload-container">
+            <h3>Upload Your File</h3>
+            <input type="file" id="fileUpload" accept="video/*">
+            <p id="fileName"></p> <!-- Для отображения названия выбранного файла -->
+        </div>
+        
+        <p>Or view some of my sample projects below:</p>
         <div class="gallery">
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video 1"></iframe>
-                <h3>Video Project 1</h3>
+                <a href="https://github.com/your-username/my-video-editing-portfolio/raw/main/sample_video.mp4" target="_blank">
+                    <h3>Sample Video 1</h3>
+                    <p>Click to view</p>
+                </a>
             </div>
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video 2"></iframe>
-                <h3>Video Project 2</h3>
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video 3"></iframe>
-                <h3>Video Project 3</h3>
+                <a href="https://github.com/your-username/my-video-editing-portfolio/raw/main/sample_video2.mp4" target="_blank">
+                    <h3>Sample Video 2</h3>
+                    <p>Click to view</p>
+                </a>
             </div>
         </div>
     </section>
@@ -63,6 +72,14 @@
     <footer>
         <p>&copy; 2025 My Video Editing Portfolio</p>
     </footer>
+
+    <script>
+        // Скрипт для отображения имени файла при загрузке
+        document.getElementById("fileUpload").addEventListener("change", function(event) {
+            var fileName = event.target.files[0] ? event.target.files[0].name : "";
+            document.getElementById("fileName").textContent = fileName ? "Selected file: " + fileName : "";
+        });
+    </script>
 
 </body>
 </html>
