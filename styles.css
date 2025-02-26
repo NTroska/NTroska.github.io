@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: url('images/my-background-image.jpg') no-repeat center center fixed; /* Фоновое изображение */
     background-size: cover;
     color: #333;
