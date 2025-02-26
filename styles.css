@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f1f1f1; /* Светлый фон */
+    background: #f1f1f1;
     color: #333;
     line-height: 1.6;
 }
@@ -102,6 +102,27 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 1.2rem;
     color: #333;
+}
+
+/* Временное сообщение в портфолио */
+.placeholder {
+    background-color: #f2e6d9; /* Светлый бежевый фон */
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder h3 {
+    font-size: 2rem;
+    color: #6a4e23;
+    margin-bottom: 1rem;
+}
+
+.placeholder p {
+    font-size: 1.2rem;
+    color: #6a4e23;
 }
 
 /* Секция контактов */
