@@ -7,29 +7,25 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background: #fef3f2; /* Молочно-розовый фон */
     color: #333;
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* Header */
 header {
-    background-color: #0d6efd;
-    color: white;
-    padding: 1rem 0;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0); /* Молочно-розовый градиент */
+    color: #6a1b9a;
+    padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
+    color: #d81b60;
     text-transform: uppercase;
 }
 
@@ -45,15 +41,16 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-size: 1.2rem;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
+    font-size: 1.1rem;
+    color: #d81b60;
+    padding: 10px 18px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #f8bbd0;
+    color: #6a1b9a;
 }
 
 /* About Me Section */
@@ -61,18 +58,18 @@ header nav ul li a:hover {
     background-color: #ffffff;
     padding: 3rem 0;
     text-align: center;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #f8bbd0;
 }
 
 #about h2 {
-    font-size: 2.2rem;
-    color: #0d6efd;
+    font-size: 2.5rem;
+    color: #d81b60;
     margin-bottom: 1rem;
 }
 
 #about p {
     font-size: 1.1rem;
-    color: #555;
+    color: #666;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -81,45 +78,47 @@ header nav ul li a:hover {
 /* Portfolio Section */
 #portfolio {
     padding: 3rem 0;
-    background-color: #f9f9f9;
+    background-color: #fce4ec; /* Светлый молочно-розовый фон */
 }
 
 #portfolio h2 {
-    font-size: 2.2rem;
-    color: #0d6efd;
+    font-size: 2.5rem;
+    color: #d81b60;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .video {
-    background-color: #fff;
-    border-radius: 8px;
+    background-color: #ffffff;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .video:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .video iframe {
     width: 100%;
     height: 200px;
     border: none;
+    border-radius: 8px;
 }
 
 .video h3 {
     font-size: 1.5rem;
-    color: #0d6efd;
+    color: #d81b60;
     text-align: center;
     padding: 1rem;
 }
@@ -131,57 +130,47 @@ header nav ul li a:hover {
 }
 
 #contact h2 {
-    font-size: 2.2rem;
-    color: #0d6efd;
+    font-size: 2.5rem;
+    color: #d81b60;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
+#contact p {
+    font-size: 1.2rem;
+    color: #6a1b9a;
+    margin-bottom: 1rem;
+}
+
+#contact ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
-form label {
+#contact ul li {
+    margin: 0;
+}
+
+#contact ul li a {
     font-size: 1.1rem;
-    color: #333;
+    color: #d81b60;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #f8bbd0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-form input, form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #0d6efd;
-    outline: none;
-}
-
-form button {
-    padding: 12px;
-    background-color: #0d6efd;
+#contact ul li a:hover {
+    background-color: #d81b60;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    background-color: #0d6efd;
+    background-color: #d81b60;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -200,4 +189,3 @@ footer p {
     max-width: 1200px;
     margin: 0 auto;
 }
-
