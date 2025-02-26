@@ -6,120 +6,198 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #0d6efd;
     color: white;
     padding: 1rem 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
     font-size: 1.2rem;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
 
-/* Section styles */
-section {
-    padding: 2rem 0;
+header nav ul li a:hover {
+    background-color: #0056b3;
 }
 
-section h2 {
-    font-size: 2rem;
+/* About Me Section */
+#about {
+    background-color: #ffffff;
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+#about h2 {
+    font-size: 2.2rem;
+    color: #0d6efd;
     margin-bottom: 1rem;
 }
 
-/* About section */
 #about p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: #555;
     max-width: 800px;
     margin: 0 auto;
+    line-height: 1.8;
 }
 
-/* Portfolio section */
-#portfolio .gallery {
+/* Portfolio Section */
+#portfolio {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+}
+
+#portfolio h2 {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-#portfolio .video {
-    margin: 10px;
-    text-align: center;
-}
-
-#portfolio .video iframe {
+.video {
+    background-color: #fff;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
 }
 
-/* Contact form */
+.video:hover {
+    transform: scale(1.05);
+}
+
+.video iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.video h3 {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 form label {
-    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #333;
 }
 
 form input, form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0d6efd;
+    outline: none;
 }
 
 form button {
-    padding: 10px;
-    background-color: #333;
+    padding: 12px;
+    background-color: #0d6efd;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #0d6efd;
     color: white;
     text-align: center;
     padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 /* Container */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
