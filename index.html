@@ -143,6 +143,26 @@
             margin: 0;
             color: #fff;
         }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -201,9 +221,9 @@
             <h2>Contact Me</h2>
             <p>Feel free to reach out via social media:</p>
             <ul>
-                <li><a href="https://www.instagram.com/humulus.llupulus/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100004955174256&locale=pl_PL" target="_blank">Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/nastassia-troska-41007823b/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/humulus.llupulus/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100004955174256&locale=pl_PL" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/nastassia-troska-41007823b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
         </div>
     </section>
