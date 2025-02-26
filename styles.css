@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #fef3f2; /* Молочно-розовый фон */
+    background: #f5f0e1; /* Нежно-бежевый фон */
     color: #333;
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0); /* Молочно-розовый градиент */
+    background: linear-gradient(135deg, #f8e0d9, #f5c6d4); /* Нежно-розовый градиент */
     color: #6a1b9a;
     padding: 2rem 0;
     text-align: center;
@@ -49,7 +49,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #f8bbd0;
+    background-color: #f5c6d4;
     color: #6a1b9a;
 }
 
@@ -58,7 +58,6 @@ header nav ul li a:hover {
     background-color: #ffffff;
     padding: 3rem 0;
     text-align: center;
-    border-bottom: 2px solid #f8bbd0;
 }
 
 #about h2 {
@@ -78,13 +77,20 @@ header nav ul li a:hover {
 /* Portfolio Section */
 #portfolio {
     padding: 3rem 0;
-    background-color: #fce4ec; /* Светлый молочно-розовый фон */
+    background-color: #f8e0d9; /* Светлый молочно-розовый фон */
 }
 
 #portfolio h2 {
     font-size: 2.5rem;
     color: #d81b60;
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+#portfolio p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6a1b9a;
     margin-bottom: 2rem;
 }
 
@@ -159,7 +165,7 @@ header nav ul li a:hover {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
-    background-color: #f8bbd0;
+    background-color: #f5c6d4;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
