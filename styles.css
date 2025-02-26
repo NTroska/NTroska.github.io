@@ -1,4 +1,4 @@
-/* Основные стили */
+/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -6,149 +6,109 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f1e6d1; /* Нежно-бежевый фон по умолчанию */
-    color: #6a4e23; /* Темно-бежевый для текста */
+    font-family: Arial, sans-serif;
+    background: #f1f1f1; /* Светлый фон */
+    color: #333;
     line-height: 1.6;
-    background-image: url('my-background-image.jpg'); /* Путь к вашему фоновому изображению */
-    background-size: cover; /* Заставляет изображение покрывать весь экран */
-    background-position: center center; /* Центрирует изображение */
+}
+
+/* Заголовки и шрифты */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: rgba(245, 239, 222, 0.8); /* Полупрозрачный бежевый фон */
-    color: #6a4e23;
-    padding: 2rem 0;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 2px;
-    color: #6a4e23;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    gap: 20px;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 header nav ul li a {
-    font-size: 1.1rem;
-    color: #6a4e23;
-    padding: 10px 18px;
-    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #d8c9a3; /* Светло-бежевый при наведении */
-    color: #6a4e23;
+    background-color: #f2c1a3;
 }
 
-/* About Me Section */
+/* Секция о себе */
 #about {
-    background-color: #f1e6d1; /* Нежно-бежевый фон */
-    padding: 3rem 0;
+    padding: 50px 0;
     text-align: center;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    color: #6a4e23;
-    margin-bottom: 1rem;
+    background-color: #fff;
 }
 
 #about p {
     font-size: 1.1rem;
-    color: #6a4e23;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+    color: #555;
 }
 
-/* Portfolio Section */
+/* Секция портфолио */
 #portfolio {
-    padding: 3rem 0;
-    background-color: #f5f1e1; /* Легкий бежевый фон */
+    padding: 50px 0;
+    background-color: #fafafa;
 }
 
-#portfolio h2 {
-    font-size: 2.5rem;
-    color: #6a4e23;
-    text-align: center;
-    margin-bottom: 1rem;
+#portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Динамическая сетка */
+    gap: 20px;
 }
 
-#portfolio p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #6a4e23;
-    margin-bottom: 2rem;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.video {
-    background-color: #ffffff;
-    border-radius: 12px;
+#portfolio .card {
+    background-color: #fff;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.video:hover {
+#portfolio .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.video iframe {
+#portfolio .card img {
     width: 100%;
-    height: 200px;
-    border: none;
-    border-radius: 8px;
+    height: auto;
+    border-bottom: 2px solid #f2f2f2;
 }
 
-.video h3 {
-    font-size: 1.5rem;
-    color: #6a4e23;
+#portfolio .card h3 {
+    padding: 15px;
     text-align: center;
-    padding: 1rem;
-}
-
-/* Contact Section */
-#contact {
-    padding: 3rem 0;
-    background-color: #f1e6d1; /* Нежно-бежевый фон */
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    color: #6a4e23;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-#contact p {
     font-size: 1.2rem;
-    color: #6a4e23;
-    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Секция контактов */
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
 }
 
 #contact ul {
@@ -159,42 +119,32 @@ header nav ul li a:hover {
 }
 
 #contact ul li {
-    margin: 0;
+    display: inline;
 }
 
 #contact ul li a {
-    font-size: 1.1rem;
-    color: #6a4e23;
+    font-size: 1.2rem;
+    color: #333;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 25px;
-    background-color: #d8c9a3; /* Светло-бежевый */
+    background-color: #f2c1a3;
+    border-radius: 30px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #contact ul li a:hover {
-    background-color: #6a4e23; /* Темно-бежевый при наведении */
-    color: white;
+    background-color: #e79f7b;
+    color: #fff;
 }
 
 /* Footer */
 footer {
-    background-color: #6a4e23;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
 }
 
 footer p {
     font-size: 1rem;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
