@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио начинающего видеомонтажера">
+    <title>Портфолио Видеомонтажера</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Привет, я видеомонтажер!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Привет! Я начинающий видеомонтажер, и я очень увлечен созданием видео-контента. Я работаю в таких программах, как Adobe Premiere Pro и DaVinci Resolve, и с удовольствием помогу вам сделать ваши видео яркими и запоминающимися.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="gallery">
+                <div class="video">
+                    <h3>Проект 1</h3>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/2f5-Vq8tLgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <h3>Проект 2</h3>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/3hZs8ZmX_1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- Добавьте больше проектов по аналогии -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Портфолио видеомонтажера</p>
+        </div>
+    </footer>
+
+</body>
+</html>
