@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background: url('my-background-image.jpg') no-repeat center center fixed; /* Фоновое изображение */
-    background-size: cover; /* Чтобы фон заполнил всю страницу */
+    background-size: cover;
     color: #333;
     line-height: 1.6;
 }
@@ -71,13 +71,15 @@ header nav ul li a:hover {
 /* Секция портфолио */
 #portfolio {
     padding: 50px 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для секции */
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    text-align: center;
 }
 
 #portfolio .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Динамическая сетка */
+    display: flex;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 #portfolio .card {
@@ -86,6 +88,8 @@ header nav ul li a:hover {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    width: 250px; /* Установим фиксированную ширину */
+    margin-bottom: 20px;
 }
 
 #portfolio .card:hover {
@@ -116,13 +120,13 @@ header nav ul li a:hover {
 }
 
 .placeholder h3 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Сделаем меньше текст */
     color: #6a4e23;
     margin-bottom: 1rem;
 }
 
 .placeholder p {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Меньше текст */
     color: #6a4e23;
 }
 
@@ -135,7 +139,7 @@ header nav ul li a:hover {
 
 #contact p {
     font-size: 1.1rem;
-    margin-bottom: 30px; /* Добавляем отступ снизу */
+    margin-bottom: 30px; /* Добавляем отступ между текстом и кнопками */
 }
 
 #contact ul {
