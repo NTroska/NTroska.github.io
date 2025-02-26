@@ -7,15 +7,18 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f5f0e1; /* Нежно-бежевый фон */
-    color: #333;
+    background: #f1e6d1; /* Нежно-бежевый фон */
+    color: #6a4e23; /* Темно-бежевый для текста */
     line-height: 1.6;
+    background-image: url('background-image.jpg'); /* Здесь позже вставьте путь к вашему изображению */
+    background-size: cover; /* Заставляет картинку фона покрывать весь экран */
+    background-position: center center; /* Центрирует изображение фона */
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #f8e0d9, #f5c6d4); /* Нежно-розовый градиент */
-    color: #6a1b9a;
+    background-color: rgba(245, 239, 222, 0.8); /* Полупрозрачный бежевый фон */
+    color: #6a4e23;
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -25,7 +28,7 @@ header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
-    color: #d81b60;
+    color: #6a4e23;
     text-transform: uppercase;
 }
 
@@ -42,33 +45,33 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 1.1rem;
-    color: #d81b60;
+    color: #6a4e23;
     padding: 10px 18px;
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #f5c6d4;
-    color: #6a1b9a;
+    background-color: #d8c9a3; /* Светло-бежевый при наведении */
+    color: #6a4e23;
 }
 
 /* About Me Section */
 #about {
-    background-color: #ffffff;
+    background-color: #f1e6d1; /* Нежно-бежевый фон */
     padding: 3rem 0;
     text-align: center;
 }
 
 #about h2 {
     font-size: 2.5rem;
-    color: #d81b60;
+    color: #6a4e23;
     margin-bottom: 1rem;
 }
 
 #about p {
     font-size: 1.1rem;
-    color: #666;
+    color: #6a4e23;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -77,12 +80,12 @@ header nav ul li a:hover {
 /* Portfolio Section */
 #portfolio {
     padding: 3rem 0;
-    background-color: #f8e0d9; /* Светлый молочно-розовый фон */
+    background-color: #f5f1e1; /* Легкий бежевый фон */
 }
 
 #portfolio h2 {
     font-size: 2.5rem;
-    color: #d81b60;
+    color: #6a4e23;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -90,7 +93,7 @@ header nav ul li a:hover {
 #portfolio p {
     text-align: center;
     font-size: 1.2rem;
-    color: #6a1b9a;
+    color: #6a4e23;
     margin-bottom: 2rem;
 }
 
@@ -124,7 +127,7 @@ header nav ul li a:hover {
 
 .video h3 {
     font-size: 1.5rem;
-    color: #d81b60;
+    color: #6a4e23;
     text-align: center;
     padding: 1rem;
 }
@@ -132,19 +135,19 @@ header nav ul li a:hover {
 /* Contact Section */
 #contact {
     padding: 3rem 0;
-    background-color: #ffffff;
+    background-color: #f1e6d1; /* Нежно-бежевый фон */
 }
 
 #contact h2 {
     font-size: 2.5rem;
-    color: #d81b60;
+    color: #6a4e23;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
 #contact p {
     font-size: 1.2rem;
-    color: #6a1b9a;
+    color: #6a4e23;
     margin-bottom: 1rem;
 }
 
@@ -161,22 +164,22 @@ header nav ul li a:hover {
 
 #contact ul li a {
     font-size: 1.1rem;
-    color: #d81b60;
+    color: #6a4e23;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
-    background-color: #f5c6d4;
+    background-color: #d8c9a3; /* Светло-бежевый */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #contact ul li a:hover {
-    background-color: #d81b60;
+    background-color: #6a4e23; /* Темно-бежевый при наведении */
     color: white;
 }
 
 /* Footer */
 footer {
-    background-color: #d81b60;
+    background-color: #6a4e23;
     color: white;
     text-align: center;
     padding: 1rem 0;
