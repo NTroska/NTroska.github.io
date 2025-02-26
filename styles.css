@@ -7,7 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f1f1f1; /* Светлый фон */
+    background: url('my-background-image.jpg') no-repeat center center fixed; /* Фоновое изображение */
+    background-size: cover; /* Чтобы фон заполнил всю страницу */
     color: #333;
     line-height: 1.6;
 }
@@ -20,7 +21,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -59,7 +60,7 @@ header nav ul li a:hover {
 #about {
     padding: 50px 0;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для секции */
 }
 
 #about p {
@@ -70,7 +71,7 @@ header nav ul li a:hover {
 /* Секция портфолио */
 #portfolio {
     padding: 50px 0;
-    background-color: #fafafa;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для секции */
 }
 
 #portfolio .grid {
@@ -104,10 +105,31 @@ header nav ul li a:hover {
     color: #333;
 }
 
+/* Временное сообщение в портфолио */
+.placeholder {
+    background-color: #f2e6d9; /* Светлый бежевый фон */
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder h3 {
+    font-size: 2rem;
+    color: #6a4e23;
+    margin-bottom: 1rem;
+}
+
+.placeholder p {
+    font-size: 1.2rem;
+    color: #6a4e23;
+}
+
 /* Секция контактов */
 #contact {
     padding: 50px 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для секции */
     text-align: center;
 }
 
