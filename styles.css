@@ -133,6 +133,11 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px; /* Добавляем отступ снизу */
+}
+
 #contact ul {
     list-style: none;
     display: flex;
