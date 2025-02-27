@@ -74,21 +74,23 @@ header nav ul li a:hover {
 }
 
 /* Кнопка "Скачать резюме" */
-.resume-button {
+.resume-btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
     font-size: 1.2rem;
-    text-decoration: none;
+    font-weight: bold;
     color: #fff;
-    background-color: #f2c1a3;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 12px 25px;
+    border: none;
     border-radius: 30px;
-    transition: 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.resume-button:hover {
-    background-color: #e79f7b;
+.resume-btn:hover {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
