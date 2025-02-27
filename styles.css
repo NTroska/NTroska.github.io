@@ -6,21 +6,15 @@ body {
     color: #333;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 header {
     background-color: #f2d1b3;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.2em;
+    font-size: 2.5em;
     color: #fff;
 }
 
@@ -43,10 +37,12 @@ nav ul li a {
 
 section {
     padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -56,57 +52,65 @@ h2 {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    text-align: center;
-    color: #555;
+.about-img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Оформление кнопки "Download Resume" */
+blockquote {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+}
+
 .btn {
     display: block;
     width: fit-content;
     margin: 20px auto;
-    padding: 12px 25px;
-    background: linear-gradient(135deg, #f2a1c7, #d98bb3);
+    padding: 10px 20px;
+    background-color: #f2a1c7;
     color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
     font-weight: bold;
-    font-size: 1.1em;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease;
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #d98bb3, #f2a1c7);
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    background-color: #d98bb3;
 }
 
-/* Контактные ссылки */
-ul {
-    list-style: none;
-    padding: 0;
+footer {
+    background-color: #f2d1b3;
     text-align: center;
+    padding: 10px;
+    margin-top: 40px;
 }
 
-ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-ul li a {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #f2a1c7;
-    font-weight: 500;
-}
-
-ul li a:hover {
-    color: #333;
+footer p {
+    margin: 0;
+    color: #fff;
 }
 
 /* Анимация появления */
@@ -119,17 +123,4 @@ ul li a:hover {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Футер */
-footer {
-    background-color: #f2d1b3;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-    color: #fff;
 }
