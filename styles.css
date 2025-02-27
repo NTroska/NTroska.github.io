@@ -1,33 +1,212 @@
-.pinterest-grid {
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('images/my-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
     justify-content: center;
-    padding: 20px;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #f2c1a3;
+}
+
+/* Секция "О себе" */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#resume-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f2a1c7;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+#resume-button:hover {
+    background-color: #d68ca7;
+    transform: scale(1.05);
+}
+
+/* Portfolio (Pinterest-style) */
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.pinterest-grid {
+    column-count: 3;
+    column-gap: 15px;
+    margin-top: 20px;
 }
 
 .pinterest-card {
-    width: 250px;
-    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pinterest-card img {
     width: 100%;
-    height: auto;
     display: block;
+    border-radius: 10px 10px 0 0;
 }
 
 .pinterest-card h3 {
     padding: 15px;
-    text-align: center;
     font-size: 1.2rem;
     color: #333;
 }
 
 .pinterest-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Секция контактов */
+#contact {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#contact ul li a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f2c1a3;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact ul li a:hover {
+    background-color: #e79f7b;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .pinterest-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #about, #contact {
+        width: 90%;
+        padding: 30px;
+    }
+
+    #contact ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pinterest-grid {
+        column-count: 1;
+    }
 }
