@@ -7,8 +7,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('images/my-background-image.jpg') no-repeat center center fixed;
+    background: url('./images/my-background-image.jpg') no-repeat center center;
     background-size: cover;
+    background-attachment: scroll;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -40,6 +41,11 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
 }
 
 header nav ul li a {
@@ -132,6 +138,11 @@ header nav ul li a:hover {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline;
 }
 
 #contact ul li a {
@@ -191,10 +202,11 @@ footer p {
     }
 
     .pinterest-grid {
-        column-count: 3;
+        column-count: 1;
     }
 }
 
+/* Анимация появления */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
