@@ -8,8 +8,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: url('./images/my-background-image.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: scroll;
+    background-size: contain; /* Теперь фон не увеличивается */
+    background-attachment: fixed;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -78,7 +78,7 @@ header nav ul li a:hover {
     color: #555;
 }
 
-/* Portfolio (Pinterest-style) */
+/* Portfolio (сеткой 3x3) */
 #portfolio {
     padding: 40px 20px;
     text-align: center;
@@ -87,15 +87,13 @@ header nav ul li a:hover {
 }
 
 .pinterest-grid {
-    column-count: 3;
-    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    gap: 20px;
     margin-top: 20px;
 }
 
 .pinterest-card {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -132,11 +130,15 @@ header nav ul li a:hover {
     margin: 40px auto;
 }
 
+#contact p {
+    margin-bottom: 20px; /* Увеличен отступ между текстом и кнопками */
+}
+
 #contact ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 0;
 }
@@ -149,7 +151,7 @@ header nav ul li a:hover {
     font-size: 1.2rem;
     color: #333;
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 14px 30px;
     background-color: #f2c1a3;
     border-radius: 30px;
     transition: 0.3s;
@@ -177,7 +179,7 @@ footer p {
 /* Адаптивность */
 @media (max-width: 1024px) {
     .pinterest-grid {
-        column-count: 2;
+        grid-template-columns: repeat(2, 1fr); /* 2 столбца на средних экранах */
     }
 }
 
@@ -202,7 +204,7 @@ footer p {
     }
 
     .pinterest-grid {
-        column-count: 1;
+        grid-template-columns: 1fr; /* 1 столбец на узких экранах */
     }
 }
 
