@@ -12,6 +12,9 @@ body {
     color: #333;
     line-height: 1.6;
     padding-bottom: 50px; /* Добавим отступ снизу для футера */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Заголовки и шрифты */
@@ -29,6 +32,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 header h1 {
@@ -42,10 +46,6 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
 }
 
 header nav ul li a {
@@ -65,104 +65,43 @@ header nav ul li a:hover {
 #about {
     padding: 50px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для секции */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
 #about p {
     font-size: 1.1rem;
     color: #555;
+    margin-bottom: 15px;
 }
 
-/* Секция портфолио */
-#portfolio {
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio h2 {
-    font-size: 2.5rem;
-    color: #f2a1c7;
-    margin-bottom: 20px;
-}
-
-#portfolio .grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-#portfolio .card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    width: 250px; /* Установим фиксированную ширину */
-    margin-bottom: 20px;
-}
-
-#portfolio .card:hover {
-    transform: scale(1.05);
-}
-
-#portfolio .card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #f2f2f2;
-}
-
-#portfolio .card h3 {
-    padding: 15px;
-    text-align: center;
+#resume-button {
+    display: inline-block;
+    padding: 15px 30px;
     font-size: 1.2rem;
-    color: #333;
+    color: #fff;
+    background-color: #f2a1c7;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
 }
 
-/* Временное сообщение в портфолио */
-.placeholder {
-    background-color: #f2e6d9; /* Светлый бежевый фон */
-    padding: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.placeholder h3 {
-    font-size: 1.5rem; /* Сделаем меньше текст */
-    color: #6a4e23;
-    margin-bottom: 1rem;
-}
-
-.placeholder p {
-    font-size: 1.1rem; /* Меньше текст */
-    color: #6a4e23;
+#resume-button:hover {
+    background-color: #d68ca7;
+    transform: scale(1.05);
 }
 
 /* Секция контактов */
 #contact {
     padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для секции */
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    color: #f2a1c7;
-    margin-bottom: 20px;
-}
-
-#contact p {
-    font-size: 1.1rem;
-    margin-bottom: 30px; /* Добавляем отступ между текстом и кнопками */
+    max-width: 800px;
 }
 
 #contact ul {
@@ -170,10 +109,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-#contact ul li {
-    display: inline;
+    flex-wrap: wrap;
 }
 
 #contact ul li a {
@@ -217,37 +153,13 @@ footer p {
         gap: 10px;
     }
 
-    #portfolio .grid {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .placeholder {
-        padding: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    #about p, #contact p {
-        font-size: 1rem;
+    #about, #contact {
+        width: 90%;
+        padding: 30px;
     }
 
     #contact ul {
         flex-direction: column;
         gap: 15px;
     }
-}
-
-/* Анимация появления */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
