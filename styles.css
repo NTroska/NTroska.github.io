@@ -7,11 +7,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('images/my-background-image.jpg') no-repeat center center fixed; /* Фоновое изображение */
+    background: url('images/my-background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     line-height: 1.6;
-    padding-bottom: 50px; /* Добавим отступ снизу для футера */
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,13 +25,10 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     width: 100%;
 }
 
