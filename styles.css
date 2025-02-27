@@ -77,23 +77,18 @@ header nav ul li a:hover {
 .resume-btn {
     display: inline-block;
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
+    color: #333;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 12px 25px;
+    background-color: #f2c1a3;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
 }
 
 .resume-btn:hover {
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: #e79f7b;
+    color: #fff;
 }
-
 /* Portfolio (Сетка 3x3) */
 #portfolio {
     padding: 40px 20px;
