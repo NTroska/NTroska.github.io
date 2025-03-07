@@ -52,6 +52,40 @@
         </div>
     </section>
 
+     <!-- Новый раздел "Отзывы" -->
+    <section id="reviews" class="reveal">
+        <h2>Reviews</h2>
+        <p>Here's what some of my clients and colleagues have to say:</p>
+        
+        <!-- Список отзывов -->
+        <div class="review-list">
+            <div class="review-card">
+                <p><strong>John Doe</strong></p>
+                <p>"Working with Nastassia was an absolute pleasure! The video editing was top-notch, and she truly brought my vision to life."</p>
+            </div>
+            <div class="review-card">
+                <p><strong>Sarah Smith</strong></p>
+                <p>"Highly recommended! The quality and attention to detail in the editing exceeded all expectations. Definitely looking forward to collaborating again!"</p>
+            </div>
+            <div class="review-card">
+                <p><strong>Alex Johnson</strong></p>
+                <p>"Nastassia is a talented editor who knows how to make a video pop. I was impressed with her work and will definitely hire her again."</p>
+            </div>
+        </div>
+
+        <!-- Форма для добавления отзыва -->
+        <h3>Leave a Review</h3>
+        <form action="submit_review.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
     <section id="contact" class="reveal">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out through any of the platforms below:</p>
