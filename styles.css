@@ -286,7 +286,7 @@ footer p {
 .stars {
     display: inline-block;
     font-size: 1.5rem;
-    color: #f2c1a3;
+    color: #ccc;
 }
 
 .stars span {
