@@ -282,6 +282,33 @@ footer p {
     color: #333;
 }
 
+/* Стили для звезд */
+.stars {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #f2c1a3;
+}
+
+.stars span {
+    margin: 0 2px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars input + label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input:checked + label,
+.stars input:hover + label {
+    color: #f2c1a3;
+}
+
 /* Стили для формы добавления отзыва */
 form {
     display: flex;
@@ -316,3 +343,4 @@ form button:hover {
     background-color: #e79f7b;
     color: white;
 }
+
