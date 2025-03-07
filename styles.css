@@ -295,14 +295,14 @@ footer p {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url('images/star-empty.svg') no-repeat center center / cover;
+    background: url('images/star-empty.png') no-repeat center center / cover;
     margin: 0 5px;
     transition: background 0.3s ease;
 }
 
 /* Заполнение звезд: при выборе звездочка становится золотой */
 .star.filled {
-    background: url('images/star-filled.svg') no-repeat center center / cover;
+    background: url('images/star-filled.png') no-repeat center center / cover;
 }
 
 /* Стили для формы добавления отзыва */
