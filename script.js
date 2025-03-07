@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // JavaScript для работы с рейтингом звезд
 const stars = document.querySelectorAll('.stars .star');
+const ratingInputs = document.querySelectorAll('input[name="rating"]');
 
 // Функция для обновления заполненных звезд
 function updateStars() {
@@ -24,21 +25,20 @@ function updateStars() {
 
     stars.forEach(star => {
         const starValue = parseInt(star.getAttribute('data-value'));
-        if (starValue <= ratingValue) {
-            star.classList.add('filled');
-        } else {
-            star.classList.remove('filled');
-        }
+        star.classList.toggle('filled', starValue <= ratingValue);
     });
 }
 
-// Обработчик событий для клика по звездах
+// Обработчик событий для клика по звездам
 stars.forEach(star => {
     star.addEventListener('click', () => {
         const ratingValue = star.getAttribute('data-value');
         const selectedStar = document.querySelector(`input[name="rating"][value="${ratingValue}"]`);
-        selectedStar.checked = true;
-        updateStars();
+        
+        if (selectedStar) {
+            selectedStar.checked = true;
+            updateStars();
+        }
     });
 });
 
