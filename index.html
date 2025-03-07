@@ -53,7 +53,7 @@
     </section>
 
     
-    <section id="reviews" class="reveal">
+  <section id="reviews" class="reveal">
     <h2>Customer Reviews</h2>
     <p>Here's what some of my clients have said about working with me:</p>
 
@@ -61,16 +61,15 @@
         <!-- Пример отзыва -->
         <div class="review-card">
             <p>"This project exceeded my expectations! The video quality was outstanding and really captured the essence of our brand."</p>
-            <strong>- Sarah P</strong>
+            <strong>- Client 1</strong>
             <div class="stars">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9734;</span>
+                <span class="star" data-value="1"></span>
+                <span class="star" data-value="2"></span>
+                <span class="star" data-value="3"></span>
+                <span class="star" data-value="4"></span>
+                <span class="star" data-value="5"></span>
             </div>
         </div>
-        <!-- Другие отзывы будут добавляться аналогично -->
     </div>
 
     <!-- Форма для добавления отзыва -->
@@ -84,16 +83,17 @@
 
         <label for="review-rating">Rating:</label>
         <div class="stars" id="stars">
-            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
-            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+            <span class="star" data-value="1"></span>
+            <span class="star" data-value="2"></span>
+            <span class="star" data-value="3"></span>
+            <span class="star" data-value="4"></span>
+            <span class="star" data-value="5"></span>
         </div>
 
         <button type="submit">Submit Review</button>
     </form>
     </section>
+
 
     <section id="contact" class="reveal">
         <h2>Contact Me</h2>
